@@ -2,6 +2,7 @@ import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { User } from './users/user.entity';
+import { UsersModule } from './users/users.module';
 
 @Module({
   imports: [
@@ -14,7 +15,8 @@ import { User } from './users/user.entity';
       database: process.env.DB_DATABASE,
       entities: [User],
       synchronize: true
-    })
+    }),
+    UsersModule
   ],
   controllers: [],
   providers: [],
