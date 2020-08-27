@@ -26,7 +26,7 @@
 
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository. This is example from my series of [blogposts](https://blog.dominikwawrzynczak.pl/2020/08/oauth-with-nestjs-application-simple-crud/) introducing to Nest and OAuth.
 
 ## Installation
 
