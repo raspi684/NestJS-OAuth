@@ -21,9 +21,9 @@ export class User {
   
   @Column({default: null})
   @Exclude()
-  google_id: string;
+  googleId: string;
   
   @Column({default: null})
   @Exclude()
-  facebook_id: string;
+  facebookId: string;
 }
