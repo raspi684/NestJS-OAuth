@@ -12,15 +12,15 @@ export class UsersService {
         private usersRepository: Repository<User>
     ) {}
 
-    findAll() {
+    async findAll(): Promise<User[]>  {
         return this.usersRepository.find();
     }
 
-    findOne(id: string) {
+    async findOne(id: string): Promise<User | undefined> {
         return this.usersRepository.findOne(id);
     }
 
-    findBy(criteria: any) {
+    async findBy(criteria: any): Promise<User[]> {
         return this.usersRepository.find(criteria);
     }
 
